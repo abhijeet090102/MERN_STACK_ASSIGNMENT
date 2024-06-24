@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="assignmentDay1" content="width=device-width , initial-scale=1.0">
+</head>
+<style>
+    body {
+        background-color: skyblue;
+    }
+    nav {
+        background-color: rgb(193, 238, 180);
+        width: 20%;
+        height: 102px;
+    }
+</style>
+<body>
+    <div id="assign">
+        <p>
+            Color Choosen
+        </p>
+    </div>
+    <p id="am"></p>
+    <p id="age"></p>
+    <!-- <div id="myelement" onclick="colorInput()">
+        </div> -->
+    <!-- <input name="colorPick" type="color" id="colorPick" /> -->
+    <!-- this is for color picker -->
+    <script type="text/javascript">
+        function colorInput() {
+            const pickColor = prompt("Enter any color eg:{red,blue}");
+            if (pickColor) {
+                document.body.style.backgroundColor = pickColor;
+            }
+            //         document.getElementById( 
+            // "myelement").style.backgroundColor = 
+            //     document.getElementById( 
+            // "colorPick").value; 
+            document.getElementById("assign").style.color = "white";
+        }
+        function nameInputAndDisplay() {
+            let nameIn = prompt("Please enter your name :");
+            if (nameIn !== null){
+                // document.getElementById("am").innerHTML = "Welcome to the coding world !"+nameIn;
+                document.write("Welcome to the coding world ! "+nameIn);
+            }
+        }
+        function ageCheckAdult(){
+            let ageIn = prompt("Please enter your age :");
+            if (ageIn >= 18){
+                document.write("You are an adult , your age is ",ageIn);
+                // document.getElementById("age").outerHTML = "You are an adult , your age is "+ageIn;
+            }else if (ageIn > 48){
+                document.write("You are an agged person ",ageIn);
+            }else{
+                document.write("You are not an adult ",ageIn);
+            }
+        }
+    </script>
+    <nav>
+        <button onclick="colorInput()">Choose Color Here</button>
+        <button onclick="nameInputAndDisplay()">Submit Name</button>
+        <button onclick="ageCheckAdult()">Age Check</button>
+    </nav>
+</body>
+
+</html>
