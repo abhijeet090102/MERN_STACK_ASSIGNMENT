@@ -85,3 +85,20 @@
 // }
 // let arr = [5,8,12,14];
 // console.log(greaterNuma(arr));
+
+// 9. Write a function that removes the third element from an array and returns a new array with the removed element. Do not modify the original array. 
+// function removeEle(arr){
+//     if (arr.length < 3) return arr.slice();
+//     return arr.slice(0,2).concat(arr.slice(3));
+// }
+// let arr = [5,8,12,14];
+// console.log(removeEle(arr));
+
+// 10. Write a function that concatenates two arrays without using the concat method.
+function concatArr (arr1,arr2){
+    const newArr = [...arr1,...arr2];
+    return newArr;
+}
+arr = [1, 2, 4, 6, 7, 8];
+arr2 = [9,16];
+console.log(concatArr(arr,arr2));
