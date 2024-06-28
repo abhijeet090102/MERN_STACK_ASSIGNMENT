@@ -218,22 +218,22 @@
 // console.log(p1);
 
 // 10.Creating Custom Error Classes:
-class InvalidAgeError extends Error {
-    constructor(message) {
-        super(message);
-        this.name = "ValidationError";
-    }
-}
-function checkAge(age){
-    if (age < 0 || age >120){
-        throw new InvalidAgeError("Age is invalid entered !");
-    }
-    return true;
-}
-try {
-    checkAge(140);
-    console.lo("Valid age !");
+// class InvalidAgeError extends Error {
+//     constructor(message) {
+//         super(message);
+//         this.name = "ValidationError";
+//     }
+// }
+// function checkAge(age){
+//     if (age < 0 || age >120){
+//         throw new InvalidAgeError("Age is invalid entered !");
+//     }
+//     return true;
+// }
+// try {
+//     checkAge(140);
+//     console.lo("Valid age !");
     
-} catch (error) {
-    console.log(error.name,error.message);
-}
+// } catch (error) {
+//     console.log(error.name,error.message);
+// }
