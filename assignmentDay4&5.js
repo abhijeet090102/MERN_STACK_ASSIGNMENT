@@ -52,6 +52,7 @@
 // const u1 = new User('abhi');
 // console.log(u1.greet());
 
+
 //4. Combining Promises and Closures
 // function createDataFetcher(api) {
 //     let fetchedData = null;
